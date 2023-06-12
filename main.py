@@ -2,14 +2,14 @@ from random import randint
 
 import sys
 
-answer = randint(int(sys.argv[1]), int(sys.argv[2]))
+answer = randint(int(sys.argv[2]), int(sys.argv[3]))
 
 while True:
     try:
-        guess = int(input(f'guess a number {sys.argv[1]}~{sys.argv[2]}:  '))
+        guess = int(input(f'guess a number {sys.argv[2]}~{sys.argv[3]}:  '))
         if  0 < guess < 11:
             if guess == answer:
-                print('you are a genius!')
+                print('You are the best!!!')
                 break
         else:
             print('hey bozo, I said 1~10')
